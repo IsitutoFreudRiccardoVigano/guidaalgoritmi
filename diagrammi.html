@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrammi di Flusso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Diagrammi di Flusso</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="algoritmi.html">Algoritmi</a></li>
+                <li><a href="pseudocodice.html">Pseudocodice</a></li>
+                <li><a href="controllo.html">Strutture di Controllo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Cosa sono i Diagrammi di Flusso?</h2>
+            <p>I diagrammi di flusso sono strumenti grafici utilizzati per rappresentare visivamente un algoritmo. Ogni passaggio dell'algoritmo è rappresentato da una forma geometrica, come rettangoli per le operazioni o rombi per le decisioni condizionali. Le frecce indicano il flusso di esecuzione tra i vari passi.</p>
+
+            <p>Questi diagrammi semplificano la comprensione del flusso logico di un processo, rendendolo visibile e facilmente seguibile. Sono spesso utilizzati per descrivere algoritmi, sistemi complessi, o processi operativi.</p>
+
+            <h3>Simboli comuni nei Diagrammi di Flusso</h3>
+            <ul>
+                <li><strong>Ellisse</strong>: Rappresenta l'inizio o la fine del processo.</li>
+                <li><strong>Rettangolo</strong>: Indica un'azione o un'operazione eseguita.</li>
+                <li><strong>Rombo</strong>: Rappresenta una decisione condizionale che può biforcarsi in due percorsi.</li>
+                <li><strong>Freccia</strong>: Mostra il flusso del controllo tra i vari passi.</li>
+            </ul>
+
+            <h3>Esempio di Diagramma di Flusso per il Controllo di un Numero</h3>
+            <p>Un esempio di diagramma di flusso che controlla se un numero è positivo, negativo o zero:</p>
+            <pre>
++------------+        +--------+
+|    Start   | --->   |  Leggi  |
++------------+        +--------+
+                        |
+                        v
+                    +--------+
+                    | Controlla |
+                    |   valore  |
+                    +--------+
+                        |
+                +-------+-------+
+                |               |
+               SI              NO
+                |               |
+                v               v
+            +---------+     +--------+
+            | Stampa  |     | Ferma  |
+            +---------+     +--------+
+            </pre>
+
+            <h3>Vantaggi dei Diagrammi di Flusso</h3>
+            <ul>
+                <li>Permettono di visualizzare il flusso logico di un processo.</li>
+                <li>Aiutano a identificare errori o inefficienze nell'algoritmo.</li>
+                <li>Sono facili da capire e condividere con altri.</li>
+            </ul>
+
+            <h3>Come Creare un Diagramma di Flusso</h3>
+            <p>Creare un diagramma di flusso richiede la scomposizione di un processo in passaggi ben definiti. Ogni passaggio deve essere rappresentato con il simbolo corretto e collegato con frecce che mostrano il flusso del processo.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Guida Algoritmi</p>
+    </footer>
+</body>
+</html>

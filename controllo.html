@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strutture di Controllo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Strutture di Controllo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="algoritmi.html">Algoritmi</a></li>
+                <li><a href="pseudocodice.html">Pseudocodice</a></li>
+                <li><a href="diagrammi.html">Diagrammi di Flusso</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Cosa sono le Strutture di Controllo?</h2>
+            <p>Le strutture di controllo sono fondamentali nella programmazione poiché permettono di determinare il flusso di esecuzione di un programma. Le principali strutture di controllo includono i cicli e le selezioni condizionali.</p>
+            
+            <h3>Selezione Condizionale (if-else)</h3>
+            <p>La selezione condizionale permette al programma di prendere decisioni. Le istruzioni all'interno del blocco <code>if</code> vengono eseguite solo se la condizione è vera; altrimenti, si passa al blocco <code>else</code> (se presente).</p>
+            <pre>
+se (condizione) allora
+    Esegui A
+altrimenti
+    Esegui B
+fine se
+            </pre>
+
+            <p>Esempio in pseudocodice per controllare se un numero è positivo, negativo o zero:</p>
+            <pre>
+inizio
+immetti numero
+se numero > 0 allora
+    scrivi "Il numero è positivo"
+altrimenti se numero < 0 allora
+    scrivi "Il numero è negativo"
+altrimenti
+    scrivi "Il numero è zero"
+fine se
+fine
+            </pre>
+
+            <h3>Ciclo While</h3>
+            <p>Il ciclo <code>while</code> permette di ripetere un blocco di codice finché una condizione è vera. Se la condizione è falsa all'inizio, il ciclo non viene eseguito nemmeno una volta.</p>
+            <pre>
+mentre (condizione) fai
+    Esegui A
+fine ciclo
+            </pre>
+
+            <p>Esempio in pseudocodice per stampare i numeri da 1 a 5:</p>
+            <pre>
+inizio
+immetti i = 1
+mentre i <= 5 fai
+    scrivi i
+    i = i + 1
+fine ciclo
+fine
+            </pre>
+
+            <p>Qui, il ciclo continua a eseguire il blocco di codice finché il valore di <code>i</code> è minore o uguale a 5. Ogni volta, <code>i</code> viene incrementato di 1.</p>
+
+            <h3>Ciclo For</h3>
+            <p>Il ciclo <code>for</code> viene utilizzato quando si conosce in anticipo il numero di iterazioni da eseguire. È particolarmente utile per iterare su sequenze come liste o range di numeri.</p>
+            <pre>
+per (inizializzazione; condizione; incremento) fai
+    Esegui A
+fine ciclo
+            </pre>
+
+            <p>Esempio in pseudocodice per stampare i numeri da 1 a 5 usando il ciclo <code>for</code>:</p>
+            <pre>
+inizio
+per i = 1 a 5 fai
+    scrivi i
+fine ciclo
+fine
+            </pre>
+
+            <p>In questo esempio, il ciclo <code>for</code> inizia con <code>i</code> impostato a 1, esegue il ciclo finché <code>i</code> è minore o uguale a 5, e incrementa <code>i</code> di 1 a ogni iterazione.</p>
+
+            <h3>Ciclo While vs For</h3>
+            <p>Entrambi i cicli <code>while</code> e <code>for</code> sono usati per eseguire blocchi di codice ripetutamente, ma la differenza principale è che il ciclo <code>for</code> viene solitamente utilizzato quando il numero di iterazioni è noto, mentre il ciclo <code>while</code> viene utilizzato quando il numero di iterazioni non è noto e dipende da una condizione.</p>
+
+            <p>Esempio: Ciclo <code>for</code> per iterare su una lista di numeri:</p>
+            <pre>
+inizio
+lista = [1, 2, 3, 4, 5]
+per ogni elemento in lista fai
+    scrivi elemento
+fine ciclo
+fine
+            </pre>
+
+            <h3>Ciclo While Infinito</h3>
+            <p>Un ciclo <code>while</code> può diventare infinito se la condizione non viene mai resa falsa. Questo può portare a problemi di esecuzione, in quanto il ciclo non terminerà mai.</p>
+            <pre>
+mentre (true) fai
+    scrivi "Questo è un ciclo infinito"
+fine ciclo
+            </pre>
+
+            <p>In questo caso, il ciclo continua a eseguire all'infinito perché la condizione è sempre vera. È importante assicurarsi che ci sia un'uscita dal ciclo, come un incremento o una condizione che alla fine diventa falsa.</p>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Guida Algoritmi</p>
+    </footer>
+</body>
+</html>

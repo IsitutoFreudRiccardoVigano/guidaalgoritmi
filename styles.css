@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f8ff; /* Un azzurro molto chiaro */
+    background-color: #f0f8ff;
     color: #333;
     line-height: 1.6;
 }
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #a0c4ff; /* Azzurro chiaro per l'effetto hover */
+    color: #a0c4ff;
 }
 
 /* Stile principale */
@@ -59,30 +59,35 @@ main {
 main h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #1e3a8a; /* Blu scuro */
+    color: #1e3a8a;
 }
 
-main p, pre {
+main p {
     margin-bottom: 20px;
     font-size: 1.1em;
 }
 
-pre {
-    background-color: #f7f7f7;
-    padding: 15px;
-    border-left: 5px solid #1e3a8a; /* Bordo blu scuro */
-    white-space: pre-wrap;
+/* Stile per i contenitori di video */
+.video-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Stile footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e3a8a; /* Blu scuro */
+    background-color: #1e3a8a;
     color: white;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    margin-top: 20px;
 }
 
 /* Layout responsivo */
@@ -104,4 +109,18 @@ footer {
         width: 90%;
         padding: 10px;
     }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
 }
+.diagramma-img {
+    width: 80px; /* Larghezza aumentata per una maggiore visibilità */
+    height: 80px; /* Altezza aumentata per una maggiore visibilità */
+    vertical-align: middle; /* Allinea verticalmente l'immagine con il testo */
+    margin-left: 10px; /* Margine a sinistra per separare l'immagine dal testo */
+    margin-right: 10px; /* Margine a destra per separare l'immagine dal testo */
+}
+
+
